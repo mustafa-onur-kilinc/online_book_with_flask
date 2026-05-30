@@ -17,3 +17,12 @@ a requirements.txt file:
 
 damnever 2015, "Automatically create file 'requirements.txt'",
 Stack Exchange, Inc., accessed 30 May 2026, <https://stackoverflow.com/a/33468993>
+
+I used this resource to learn how to separate changes to smaller parts for more
+atomic Git commits:
+
+mac et. al. 2022, "Commit only part of a file's changes in Git", 
+Stack Exchange, Inc., accessed 30 May 2026, <https://stackoverflow.com/a/1085191>
+
+Resources used to write the codes can be located in comment blocks at the beginning
+of files.
