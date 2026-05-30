@@ -4,7 +4,7 @@ A Minimal Application n.d., Pallets, accessed 30 May 2026,
 <https://flask.palletsprojects.com/en/stable/quickstart/#a-minimal-application>
 """
 
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 app = Flask(__name__)
 
