@@ -1,5 +1,12 @@
 # 100 Days of Python - Day 70 (Git, GitHub and Version Control)
 
+This repository displays one sentence long book chapters in pure HTML webpages.
+
+Flask framework is used to write Python code for creating the website and 
+Jinja templates are used to create more dynamic HTML pages.
+
+The home page is a simple "List of Content" style page.
+
 ## Creating a requirements.txt File
 
 1. Open a terminal
