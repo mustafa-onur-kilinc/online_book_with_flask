@@ -4,4 +4,15 @@
 
 {% include 'header.html' %}
 
-<p>Text goes here.</p>
+<body>
+    <h1>Chapters</h1>
+
+    <a href="{{ url_for('show_chapter', chapter_num=1) }}">Chapter 1</a>
+    <br>
+
+    <a href="{{ url_for('show_chapter', chapter_num=2) }}">Chapter 2</a>
+    <br>
+
+    <a href="{{ url_for('show_chapter', chapter_num=3) }}">Chapter 3</a>
+    <br>
+</body>
