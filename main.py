@@ -12,18 +12,22 @@ app = Flask(__name__)
 @app.route("/chapters/<int:chapter_num>")
 def show_chapter(chapter_num: int):
     chapters = [
-        "It was the best of times, it was the worst of times.",
-        "It was the age of wisdom, it was the age of foolishness.",
-        "It was the spring of hope, it was the winter of despair."
+        {"title": "Chapter 1", "content": "It was the best of times, it was the worst of times."},
+        {"title": "Chapter 2", "content": "It was the age of wisdom, it was the age of foolishness."},
+        {"title": "Chapter 3", "content": "It was the spring of hope, it was the winter of despair."}
     ]
 
     if chapter_num > len(chapters):
         abort(404)
 
+    chosen_chapter = chapters[chapter_num - 1]
+    chapter_title = chosen_chapter["title"]
+    chapter_text = chosen_chapter["content"]
+
     return render_template(
         "chapter.html",
-        chapter_title=f"Chapter {chapter_num}",
-        chapter_text=chapters[chapter_num - 1]
+        chapter_title=chapter_title,
+        chapter_text=chapter_text
     )
 
 
