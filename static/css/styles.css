@@ -1,3 +1,15 @@
+/**
+  * Resources used to write this code:
+  * list-style-type CSS property 2026, MDN contributors, accessed 31 May 2026,
+  * <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/list-style-type>
+  *
+  * CSS Selectors n.d., Refsnes Data, accessed 31 May 2026,
+  * <https://www.w3schools.com/css/css_selectors.asp>
+  *
+  * CSS Comments n.d., Refsnes Data, accessed 31 May 2026,
+  * <https://www.w3schools.com/css/css_comments.asp>
+  */
+
 .nav_links_list {
     list-style-type: none;
     margin: 0;
