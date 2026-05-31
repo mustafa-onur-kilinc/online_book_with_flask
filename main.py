@@ -32,6 +32,11 @@ def show_chapter(chapter_num: int):
     )
 
 
+@app.route("/chapters")
+def show_table_of_content():
+    return render_template("table_of_content.html", chapter_count=len(chapters))
+
+
 @app.route("/")
 def home_page():
     return render_template("index.html")
