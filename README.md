@@ -7,11 +7,54 @@ Jinja templates are used to create more dynamic HTML pages.
 
 The home page is a simple "List of Content" style page.
 
+## How to Download this Repository
+
+1. Open a terminal (if available, you may use the terminal in your IDE)
+2. On this webpage, click the green button with "<> Code" written on it
+3. For HTTP and SSH options, run `git clone <repo>` command in terminal
+
+## How to Create Python Virtual Environment
+
+1. After the repository is downloaded, open a terminal
+2. Use `cd <repo_directory>` command to go to the repository
+3. Create the virtual environment using the `venv` library
+
+To create the virtual environment on Unix/macOS, enter the command below: 
+```bash 
+python3 -m venv <folder of virtual environment>
+```
+
+For Windows, enter this command instead:
+```bash
+py -m venv <folder of virtual environment>
+```
+
+Usually, `.venv` is used for folder name.
+
+## How to Activate Virtual Environment
+
+To activate the virtual environment on Unix/macOS, enter the command below:
+
+```bash
+source <folder of virtual environment>/bin/activate
+```
+
+For Windows, enter this command instead:
+```bash
+<folder of virtual environment>\Scripts\activate
+```
+
+## Downloading Required Libraries and Frameworks
+
+1. Open a terminal
+2. Use `cd <repo_directory>` command to go to the repository
+3. Run the command `pip3 install -r requirements_3_14.txt` to download required libraries and frameworks
+
 ## Creating a requirements.txt File
 
 1. Open a terminal
 2. Make sure your Python virtual environment is activated in the terminal
-3. Run this command in the terminal: "pip3 freeze > [requirement file name].txt"
+3. Run this command in the terminal: `pip3 freeze > [requirement file name].txt`
 
 **Note:** Make sure you are in the .venv environment before running
 the command in the third step.
