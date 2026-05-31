@@ -74,5 +74,17 @@ atomic Git commits:
 mac et. al. 2022, "Commit only part of a file's changes in Git", 
 Stack Exchange, Inc., accessed 30 May 2026, <https://stackoverflow.com/a/1085191>
 
+I used these resources to learn how to create and activate virtual environments:
+
+Soviut 2015, "Creating a virtualenv with preinstalled packages as in requirements.txt",
+Stack Exchange, Inc., accessed 31 May 2026, <https://stackoverflow.com/a/41799834>
+
+Create and Use Virtual Environments 2025, PyPA, accessed 31 May 2026,
+<https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments>
+
+Syed AHMAD 2023, "Setting up a virtual environment and requirements.txt file for your data science project", 
+Medium, Inc., accessed 31 May 2026,
+<https://medium.com/@syedhaseebahmad97/setting-up-a-virtual-environment-and-requirements-txt-file-for-your-data-science-project-f5e0b33a4a92>
+
 Resources used to write the codes can be located in comment blocks at the beginning
 of files.
