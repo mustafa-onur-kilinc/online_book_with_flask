@@ -31,6 +31,11 @@ def show_chapter(chapter_num: int):
     )
 
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
 @app.route("/")
 def home_page():
     return render_template("index.html")
