@@ -8,15 +8,16 @@ from flask import Flask, render_template, abort
 
 app = Flask(__name__)
 
+chapters = [
+    {"title": "Chapter 1", "content": "It was the best of times, it was the worst of times."},
+    {"title": "Chapter 2", "content": "It was the age of wisdom, it was the age of foolishness."},
+    {"title": "Chapter 3", "content": "It was the spring of hope, it was the winter of despair."}
+]
+
+
 
 @app.route("/chapters/<int:chapter_num>")
 def show_chapter(chapter_num: int):
-    chapters = [
-        {"title": "Chapter 1", "content": "It was the best of times, it was the worst of times."},
-        {"title": "Chapter 2", "content": "It was the age of wisdom, it was the age of foolishness."},
-        {"title": "Chapter 3", "content": "It was the spring of hope, it was the winter of despair."}
-    ]
-
     if chapter_num > len(chapters):
         abort(404)
 
@@ -34,6 +35,11 @@ def show_chapter(chapter_num: int):
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+
+@app.route("/chapters")
+def show_table_of_content():
+    return render_template("table_of_content.html", chapter_count=len(chapters))
 
 
 @app.route("/")

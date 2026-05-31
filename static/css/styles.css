@@ -1,0 +1,10 @@
+.nav_links_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_link a {
+    padding: 3px;
+}

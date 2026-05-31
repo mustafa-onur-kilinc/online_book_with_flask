@@ -8,5 +8,14 @@
 {% include 'header.html' %}
 
 <body>
-    <h1>Welcome to 'A Simple Story'</h1>
+    <h1>Chapters</h1>
+
+    {% for chapter_num in range(chapter_count) %}
+        <a href="{{ url_for('show_chapter', chapter_num=chapter_num + 1) }}">
+            Chapter {{ chapter_num + 1 }}
+        </a>
+        <br>
+    {% endfor %}
+
+    <a href="{{ url_for('home_page') }}">Go to Home Page</a>
 </body>
