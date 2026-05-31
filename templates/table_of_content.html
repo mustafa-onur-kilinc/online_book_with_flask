@@ -1,0 +1,21 @@
+<!-- Resources used to write this code: -->
+<!-- Include n.d., Pallets, accessed 30 May 2026, -->
+<!-- <https://jinja.palletsprojects.com/en/stable/templates/#include> -->
+<!-- -->
+<!-- url_for() n.d., Pallets, accessed 30 May 2026, -->
+<!-- <https://flask.palletsprojects.com/en/stable/api/#flask.Flask.url_for> -->
+
+{% include 'header.html' %}
+
+<body>
+    <h1>Chapters</h1>
+
+    {% for chapter_num in range(chapter_count) %}
+        <a href="{{ url_for('show_chapter', chapter_num=chapter_num + 1) }}">
+            Chapter {{ chapter_num + 1 }}
+        </a>
+        <br>
+    {% endfor %}
+
+    <a href="{{ url_for('home_page') }}">Go to Home Page</a>
+</body>
